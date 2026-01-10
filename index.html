@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .main_title_flex,
+        .projects_flex,
+        .about_me_flex,
+        .page_footer,
+        .contact_information_flex {
+            border: 5px solid #333;
+            border-image: linear-gradient(90deg, #ffbd42, #3ef108) 1;
+            color: white;
+        }
+
+        @media screen and (max-width: 850px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+    <link rel="shortcut icon" href="#">
+
+    <link rel="stylesheet" href="CSS/projects_styles.css">
+    <link rel="stylesheet" href="CSS/about_me_styles.css">
+    <link rel="stylesheet" href="CSS/navigation_bar_styles.css">
+    <link rel="stylesheet" href="CSS/contact_styles.css">
+    <link rel="stylesheet" href="CSS/main_title_styles.css">
+    <link rel="stylesheet" href="CSS/main_bg_styles.css">
+    <link rel="stylesheet" href="CSS/page_footer_styles.css">
+
+    <title>AlexCats1 Portfolio</title>
+</head>
+
+<body>
+
+    <div class="navigation_bar">
+        <a href="#home">Home</a>
+        <a href="#about_me">About me</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div id="home" class="main_title_flex">
+        <p class="main_title">Javier Ledesma | AlexCats1</p> <!-- title of the page-->
+        <h1>Portfolio</h1>
+    </div>
+
+
+    <div id="about_me" class="about_me_flex">
+        <h1>About me</h1>
+
+        <div class="about_me_info">
+
+            <p>Computer Engineering student at UdeG in CUCEI. </br></br>I have done several games in Godot, as
+                well as developing applications using Avalonia UI, both using C#. I also have knowledge of C
+                and C++, oriented to algorithms.</br></br>
+                I've developed some web pages as fullstack, making API's in C# and working with JavaScript, using Next.js.</br></br>
+                I consider myself as a fast-learning person, disciplined and opened to new technologies to learn.</br></br>
+                As a hobby I like to do street photography and drawing pixel art.</p>
+
+            <div class="about_me_languages">
+
+                <div>
+                    <a href="https://dotnet.microsoft.com/en-us/languages/csharp">
+                        <img src="Resources/Images/csharp_logo.png" alt="c#_logo" />
+                    </a>
+
+                    <a href="https://learn.microsoft.com/en-us/cpp/?view=msvc-170">
+                        <img src="Resources/Images/c++_logo.png" alt="c++_logo" />
+                    </a>
+
+                    <a href="https://learn.microsoft.com/en-us/cpp/?view=msvc-170">
+                        <img src="Resources/Images/c_logo.png" alt="c_logo" />
+                    </a>
+
+                    <a href="https://godotengine.org/">
+                        <img src="Resources/Images/godot_logo.png" alt="godot_logo" />
+                    </a>
+
+                    <a href="https://avaloniaui.net/">
+                        <img src="Resources/Images/avalonia_ui_logo.png" alt=avalonia_ui_logo" />
+                    </a>
+
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+                        <img src="Resources/Images/html_logo.svg" alt=html_logo" />
+                    </a>
+
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+                        <img src="Resources/Images/css_logo.svg" alt=css_logo" />
+                    </a>
+
+                    <a href="https://nextjs.org/">
+                        <img src="Resources/Images/nextjs_logo.svg" alt=nextjs_logo" />
+                    </a>
+
+                    <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">
+                        <img src="Resources/Images/javascript_logo.svg" alt="javascript_logo" />
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="projects" class="projects_flex">
+        <h1>Projects</h1>
+        <!-- minecraft godot -->
+        <div class="project">
+
+            <div class="projects_image_container">
+
+                <a href="Resources/Images/minecraft_godot.png" alt="minecraft_godot_1" target="_blank"><img
+                        src=" Resources/Images/minecraft_godot.png"></a>
+                <a href="Resources/Images/minecraft_godot2.png" alt="minecraft_godot_2" target="_blank"><img
+                        src="Resources/Images/minecraft_godot2.png"></a>
+                <a href="Resources/Images/minecraft_godot3.png" alt="minecraft_godot_3" target="_blank"><img
+                        src="Resources/Images/minecraft_godot3.png"></a>
+                <a href="Resources/Images/minecraft_godot4.png" alt="minecraft_godot_4" target="_blank"><img
+                        src="Resources/Images/minecraft_godot4.png"></a>
+
+            </div>
+
+            <div class="projects_text_container">
+                <h2>Minecraft Clone</h2>
+                <p>This is a Minecraft Clone where you can break and place blocks; a
+                    little sandbox to play in!</p>
+            </div>
+        </div>
+
+        <!-- proclot sim-->
+        <div class="project">
+
+            <div class="projects_text_container">
+                <h2>ProcLot Sim</h2>
+                <p>ProcLot Sim is a desktop application that simulates the old computing
+                    that we had in the 50s: batch processing.<br><br>You can add processes to this app and then
+                    start the simulation to see how the processes work.</p>
+            </div>
+
+            <div class="projects_image_container">
+
+                <a href="Resources/Images/proclot_sim1.png" alt="proclot_sim1" target="_blank">
+                    <img src="Resources/Images/proclot_sim1.png" />
+                </a>
+
+                <a href="Resources/Images/proclot_sim2.png" alt="proclot_sim2" target="_blank">
+                    <img src="Resources/Images/proclot_sim2.png" />
+                </a>
+
+                <a href="Resources/Images/proclot_sim3.png" alt="proclot_sim1" target="_blank">
+                    <img src="Resources/Images/proclot_sim3.png" />
+                </a>
+
+
+            </div>
+
+        </div>
+
+        <!-- museum search -->
+        <div class="project">
+
+            <div class="projects_image_container">
+                <a href="Resources/Images/museum_search1.png" alt="museum_search1" target="_blank">
+                    <img src="Resources/Images/museum_search1.png" />
+                </a>
+                <a href="Resources/Images/museum_search2.png" alt="museum_search2" target="_blank">
+                    <img src="Resources/Images/museum_search2.png" />
+                </a>
+                <a href="Resources/Images/museum_search3.png" alt="museum_search3" target="_blank">
+                    <img src="Resources/Images/museum_search3.png" />
+                </a>
+                <a href="Resources/Images/museum_search4.png" alt="museum_search4" target="_blank">
+                    <img src="Resources/Images/museum_search4.png" />
+                </a>
+            </div>
+
+            <div class="projects_text_container">
+                <h2>Museum Search</h2>
+                <p>A web page where you can search the different museums of México.</br></br>
+                    Featuring over 1600 museums in the database!
+                </p>
+            </div>
+        </div>
+
+        <!-- vocho's console -->
+        <div class="project">
+
+            <div class="projects_text_container">
+                <h2>Vocho's retro-game</h2>
+                <p>A retro-styled game with 8-bit sounds, played on console.</br></br>
+                    In this game you are a car, having to avoid the cars that come against your way.</br></br>
+                    With the help of perks, survive and get the maximum score!</p>
+
+                <a href="https://www.youtube.com/watch?v=WmMy84zlejY" target="_blank">
+                    <p>See video</p>
+                </a>
+
+            </div>
+
+            <div class="projects_image_container">
+                <a href="Resources/Images/vochos_console4.jpg" alt="vochos_console1" target="_blank">
+                    <img src="Resources/Images/vochos_console4.jpg" />
+                </a>
+                <a href="Resources/Images/vochos_console3.jpg" alt="vochos_console1" target="_blank">
+                    <img src="Resources/Images/vochos_console3.jpg" />
+                </a>
+                <a href="Resources/Images/vochos_console1.jpg" alt="vochos_console1" target="_blank">
+                    <img src="Resources/Images/vochos_console1.jpg" />
+                </a>
+                <a href="Resources/Images/vochos_console2.jpg" alt="vochos_console1" target="_blank">
+                    <img src="Resources/Images/vochos_console2.jpg" />
+                </a>
+            </div>
+        </div>
+
+        <!-- pixel gems-->
+        <div class="project">
+
+            <div class="projects_image_container">
+                <a href="Resources/Images/pixel_gems1.png" alt="pixel_gems1" target="_blank"><img
+                        src="Resources/Images/pixel_gems1.png"></a>
+                <a href="Resources/Images/pixel_gems2.png" alt="pixel_gems2" target="_blank"><img
+                        src="Resources/Images/pixel_gems2.png"></a>
+                <a href="Resources/Images/pixel_gems3.png" alt="pixel_gems3" target="_blank"><img
+                        src="Resources/Images/pixel_gems3.png"></a>
+                <a href="Resources/Images/pixel_gems4.png" alt="pixel_gems4" target="_blank"><img
+                        src="Resources/Images/pixel_gems4.png"></a>
+            </div>
+
+            <div class="projects_text_container">
+                <h2>Pixel Gems</h2>
+                <p>A little game about catching gems that fall from the
+                    space!<br><br>Art and assets done by me.</p>
+
+
+                <a href="https://alexcats1.itch.io/pixelgems" target="_blank">
+                    <p>Try the game</p>
+                </a>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="contact" class="contact_information_flex">
+        <h1>Contact</h1>
+
+        <p>Do you want to contact me? You can do it on my social media:</p>
+
+        <div class="contact_information_images_container">
+            <a href="mailto:alexcatsdev@gmail.com" alt="gmail_icon" target="_blank"><img
+                    src=" Resources/Images/gmail_icon.png"></a>
+            <a href="https://github.com/AlexCats1" alt="github_icon" target="_blank"><img
+                    src=" Resources/Images/github_icon.png"></a>
+            <a href="https://www.linkedin.com/in/javier-alejandro-ledesma-valdivia-b10629313/" alt="linkedin_icon"
+                target="_blank"><img src=" Resources/Images/linkedin_icon.png"></a>
+            <a href="https://www.instagram.com/javild_/" alt="instagram_icon" target="_blank"><img
+                    src=" Resources/Images/instagram_icon.webp"></a>
+        </div>
+    </div>
+
+    <div class="page_footer">
+        <p>&#64;AlexCats1. For more information or any situation contact me at: alexcatsdev&#64;gmail.com.</p>
+    </div>
+
+    <div class="main_bg">
+        <div id="small_stars" />
+        <div id="medium_stars" />
+        <div id="big_stars" />
+    </div>
+</body>
+
+</html>

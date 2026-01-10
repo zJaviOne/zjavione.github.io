@@ -1,0 +1,78 @@
+@function multiple-box-shadow($number_of_stars) {
+
+    $value: "#{random(2000)}px #{random(2000)}px #FFF"; // we initialize the varibla
+
+    @for $i from 2 through $number_of_stars {
+        $value: "#{$value}, #{random(2000)}px #{random(2000)}px #FFF"; // and then iterate through to get random values, so each star has different values.
+    }
+
+    @return unquote($value); // finally we return the list.
+}
+
+$shadows_small: multiple-box-shadow(700);
+$shadows_medium: multiple-box-shadow(200);
+$shadows_big: multiple-box-shadow(100);
+
+#small_stars{
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows_small;
+  animation	: animStar 10s linear infinite;
+    
+  &:after{
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows_small;
+  }
+}
+    
+#medium_stars{
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows_medium;
+  animation	: animStar 15s linear infinite;
+    
+  &:after{
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows_medium;
+  }
+}
+    
+#big_stars{
+  width: 3px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows_big;
+  animation	: animStar 20s linear infinite;
+    
+  &:after{
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows_big;
+  }
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}

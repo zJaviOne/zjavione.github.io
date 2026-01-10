@@ -1,0 +1,54 @@
+.navigation_bar {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    /* with the position fixed, it means thiss will not move from the position it's in, even if we move the page up or down.*/
+
+    background: #161616;
+
+    border: 3px solid #222222;
+
+    border-left: none;
+    border-right: none;
+    border-top: none;
+
+    top: 0;
+    /* this helps us to put the class above of all the other content. */
+
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+    padding: 10px;
+
+    height: 50px;
+    width: 100%;
+    /* width of 100% so it is good.*/
+    gap: 10px;
+
+    & a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: 0s;
+    }
+
+    & a:hover {
+        transition: 0.1s;
+        background: linear-gradient(to right, #ffbd42, #3ef108, #ffbd42);
+        background-clip: text;
+        color: transparent;
+        background-size: 200%, auto;
+        animation: navigation_options_gradient_animations 2s linear infinite;
+    }
+}
+
+@keyframes navigation_options_gradient_animations {
+    0% {
+        background-position: 200% 50%;
+    }
+
+    100% {
+        background-position: 0%, 50%;
+    }
+
+}
